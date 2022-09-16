@@ -10,8 +10,6 @@ COPY . app.py /app/
 RUN pip install --no-cache-dir --upgrade pip &&\
         pip install --no-cache-dir -r requirements.txt
     #hadolint ignore=DL3013
-    #docker run --rm -i hadolint/hadolint ignore=DL3013
-    #docker run --rm -i hadolint\/hadolint ignore=DL3042
 
 ## Step 4:
 EXPOSE 80
